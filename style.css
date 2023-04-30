@@ -1,0 +1,26 @@
+
+
+.card__img--cover{
+    width: 100%;  
+   
+}
+.informacion__text--background{
+    background-color:#353a40 ;
+}
+.underline__link{
+    text-decoration:dashed;
+}
+.color__button--send{
+    background-color: #96c93e;
+    color: white;
+
+} 
+.color__button--send:hover{
+    background-color: #33a74e;
+    color: white;
+
+} 
+
+  
+
+    

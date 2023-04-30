@@ -1,0 +1,27 @@
+.footer--background{
+    background:linear-gradient(to right, #1c3846 60%, #1f5271 );
+
+} 
+
+.footer--shadow{
+    filter: drop-shadow(2px, 4px, 6px, white);
+    -webkit-filter: drop-shadow(2px, 4px, 6px, white);
+}
+
+footer div{
+    
+    align-content: center;
+}
+footer a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: gray;
+    transition: .3 all;
+}
+
+footer a:hover{
+    
+    color:white;
+    transition: .5 all;
+
+}

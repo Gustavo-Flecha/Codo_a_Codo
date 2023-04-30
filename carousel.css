@@ -1,0 +1,31 @@
+.section--carusel{
+    background-color: black;
+}
+.carousel{
+ height: 610px;
+ position: relative;
+}
+
+.carousel img{
+   height: 610px;  
+   object-fit: cover;
+}
+
+.carousel-control-prev{
+    width: 7%;
+}
+.carousel-control-next{
+    width: 7%;
+}
+
+.color__button--tickets{
+    background-color:#33a74e;
+}
+
+
+.carusel-texto{
+    position:absolute;
+    right: 8%;
+    top:40%;
+    text-shadow: #353a40;
+} 

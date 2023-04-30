@@ -1,0 +1,34 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    box-sizing: border-box;
+}
+
+.img__logo--w{
+    width: 95px;
+}
+
+.a_logo_size{
+    width: 20vw;
+}
+
+nav div .navbar-nav{
+    color:gray;
+}
+
+nav div .a--tickets{
+    color:#33a74e;
+}
+
+
+nav div .nav-link:hover{
+    color:white;
+}
+
+nav div .a--tickets:hover{
+    color:#49fd73;
+}
+
+.nav--bg{
+    background:#353a40;
+}
