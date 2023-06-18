@@ -7,7 +7,7 @@ let catEstudiante = 0.8;
 let catTrainee = 0.5;
 let catJunior = 0.15;
 let descuento = 0;
-let precioOriginal = 800;
+let precioOriginal = 200;
 let precioFinal = 0;
 var vacio = 0;
 // ----------- Para validación--------
