@@ -1,0 +1,100 @@
+.tipo_de_tickets {
+    margin: 1% 2px;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    flex-wrap: wrap;
+}
+
+.tipo_de_tickets:hover {
+    cursor: pointer;
+    box-shadow: -10px -12px 15px 5px rgba(24, 19, 19, 0.37);
+}
+
+.tipo_de_tickets h3 p p {
+    font-size: 0.9em;
+    color: rgb(185, 13, 13);
+}
+
+.tipo_de_tickets p:nth-of-type(2) {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.tipo_de_tickets:nth-of-type(1) {
+    border: 1px solid #037dfe;
+}
+
+.tipo_de_tickets:nth-of-type(2) {
+    border: 1px solid #4ab6c8;
+}
+
+.tipo_de_tickets:nth-of-type(3) {
+    border: 1px solid #fec10a;
+}
+
+/* ------- Estilos del Formulario */
+
+.container_form {
+    position: relative;
+    left: 25%;
+    align-items: center;
+    width: 50%;
+}
+
+.form_datos {
+    margin: 1em 0 1.5em 0;
+}
+
+input {
+    border: none;
+}
+
+input,
+select {
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1.5px solid #ccc;
+    height: 2.5em;
+    color: #4b525a;
+}
+
+input[type=text] {
+    width: 49.36%;
+}
+
+input[type=email] {
+    width: 99.8%;
+}
+
+.form_datos_cant {
+    display: flex;
+    flex-direction: column;
+    width: 49.36%;
+}
+
+.container_datos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#total {
+    margin-top: 4%;
+    background-color: #cce5ff;
+    width: 99.8%;
+    height: 3em;
+    color: #064589;
+}
+
+.btn {
+    width: 49.36%;
+    background-color: #97c93e;
+    border: none;
+    margin: 4% 0 4% 0;
+
+
+}
