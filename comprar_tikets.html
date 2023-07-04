@@ -14,17 +14,17 @@
 <body>
     <section>
         <article class="d-flex justify-content-center">
-            <div class="tipo_de_tickets">
+            <div class="tipo_de_tickets estudiante">
                 <h3>Estudiante</h3>
                 <p>Tienen un descuento <br><br><strong>80%</strong></p>
                 <p> *presentar documentación</p>
             </div>
-            <div class="tipo_de_tickets">
+            <div class="tipo_de_tickets trainee">
                 <h3>Trainee</h3>
                 <p>Tienen un descuento <br><br><strong>50%</strong></p>
                 <p>*presentar documentación</p>
             </div>
-            <div class="tipo_de_tickets">
+            <div class="tipo_de_tickets junior">
                 <h3>Junior</h3>
                 <p>Tienen un descuento <br><br><strong>15%</strong></p>
                 <p>*presentar documentación</p>
@@ -37,23 +37,24 @@
 
             <form action="#" id="formulario" class="container_form">
                 <fieldset class="form_datos">
-                    <input type="text" id="nombre" placeholder=" Nombre" tabindex='1' required />
-                    <input type="text" id="apellido" placeholder=" Apellido" tabindex='2' required/>
-                    <input type="email" id="email" placeholder=" Correo" tabindex='3' required/>
+                    <input type="text" id="nombre" placeholder=" Nombre" tabindex='1' required oninput="this.value = this.value.replace(/[0-9]/g, '')"/>
+                    <input type="text" id="apellido" placeholder=" Apellido" tabindex='2' required oninput="this.value = this.value.replace(/[0-9]/g, '')"/>
+                    <input type="email" name="email" id="email" placeholder=" Correo" tabindex='3' required/>
                 </fieldset>
 
                 <fieldset class="container_datos">
                     <fieldset class="form_datos_cant">
                         <label for="cantidad">Cantidad</label>
-                        <input type="number" id="cantidad" placeholder=" Cantidad" tabindex='4'>
+                        <input type="number" id="cantidad" min="1" placeholder="00" tabindex='4' oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                     </fieldset>
 
                     <fieldset class="form_datos_cant">
                         <label for="categoría">Categoría</label>
-                        <select name="lista" tabindex='5'>
-                            <option value="" selected>Estudiante</option>
-                            <option value="">Trainee</option>
-                            <option value="">Junior</option>
+                        <select name="lista" tabindex='5' id="category">
+                            <option value="0" selected>Espectador</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
                         </select>
                     </fieldset>
                 </fieldset>
@@ -71,6 +72,8 @@
     </section>
 </body>
 <script src="javascript/calculos.js"></script>
+<script src="javascript/dom.js"></script>
 <script src="javascript/validar.js"></script>
+
 
 </html>
